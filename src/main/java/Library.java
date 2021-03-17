@@ -41,4 +41,12 @@ public class Library {
     public int librarianCount(){
         return librarian.size();
     }
+
+    public void librarianAtWork(Librarian librarian) {
+        this.librarian.add(librarian);
+    }
+
+    public void librariansGoesHomes() {
+        this.librarian.clear();
+    }
 }

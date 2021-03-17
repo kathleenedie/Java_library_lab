@@ -82,4 +82,12 @@ public class LibraryTest {
         assertEquals(1, library.librarianCount());
     }
 
+    @Test
+    public void canRemoveLibrarian(){
+        library.librarianAtWork(librarian);
+        library.librarianAtWork(librarian);
+        library.librariansGoesHomes();
+        assertEquals(0, library.librarianCount());
+    }
+
 }
